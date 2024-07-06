@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title> Forms </title>
+	</head>
+	<body>
+		<form>
+			Enter Username <input type="text" name="n1" autofocus>  <!--Texbox is automaticaly focused when form is loaded-->
+			<br><br>
+			Enter Password <input type="Password" name="n2">
+			<br><br>
+			Enter Email <input type="email" name="n3">
+			<br>
+			<h2> Select your qualification </h2>
+			<input type="radio" name="r"> BCA
+			<input type="radio" name="r"> MCA
+			<input type="radio" name="r"> B.Tech
+			<input type="radio" name="r"> M.Tech
+			<input type="radio" name="r"> BBA
+			<input type="radio" name="r"> MBA
+			<input type="radio" name="r"> B.Sc
+			<input type="radio" name="r"> M.Sc
+			<input type="radio" name="r"> B.com
+			<input type="radio" name="r"> M.com
+			<br><br>
+			<h2> Select your qualification </h2>
+			<input type="checkbox" name="r"> Reading
+			<input type="checkbox" name="r"> Writing
+			<input type="checkbox" name="r"> Playing
+			<input type="checkbox" name="r"> Singing
+			<input type="checkbox" name="r"> Dancing
+			<input type="checkbox" name="r"> Cooking
+			<br><br>
+			Country <select name="counrty">
+				<option value="-1" selected>Select Country</option>
+				<option> India </option>
+				<option> USA </option>
+				<option> United Kingdom </option>
+				<option> Canada </option>
+				<option> France </option>
+				<option> Italy </option>
+				<option> Germany </option>
+				<option> Russia </option>
+				<option> Australia </option>
+				<option> South Africa </option>
+				<option> Japan </option>
+				<option> Nepal </option>
+				<option> South Korea </option>
+				<option> China </option>
+				<option> North Korea </option>
+				<option> Denmark </option>
+				<option> Belgium </option>
+				<option> Spain </option>
+			</select>
+			<br><br>
+			Number Input <input type="number" min="0" max="1000" step="10" value="100">
+			<br><br>
+			Number Input 2 <input type="number">
+			<br><br>
+			 Enter your birthday<input type="date" name="birthday" min="1932-01-01" max="2024-12-31">
+			 <br><br>
+			 Color <input type="color"  name="colr">
+			 <br><br>
+			 Month <input type="month">
+			 <br><br>
+			 Week <input type="week">
+			 <br><br>
+			 Time <input type="time">
+			 <br><br>
+			 Date Time <input type="datetime-local">
+			 <br><br>
+			 Readonly <input type="text" value="Hello" readonly> <!-- Value cannot be edited by user-->
+			 <br><br>
+			 Requiered <input type="text" required> <!--Textbox should be given a value or text by the user-->
+			 <br><br>
+			<textarea cols="20" rows="10"></textarea>
+			<br><br><br>
+			<input type="file" name="f" multiple accept="image/*"/>
+			<br><br>
+			<input type="reset" name="re" value="Reset the form">
+			<br><br>
+			<input type="submit" name="sub" value="Submit the form">
+		</form>
+	</body>
+</html>
