@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title> Wrap </title>
+		<style>
+			.d1{
+				width:60px;
+				border:solid 2px black;
+				text-wrap: nowrap; /*nowrap blocks text to move downwards in division i.e. text move out of the direction of division*/
+				overflow:hidden;  /*hide overflown text*/
+				text-overflow:clip; /*By-default text-overflow. Indicates style of text-wrap*/
+			}
+			.d2{
+				width:50px;
+				border:solid 2px black;
+				text-wrap: nowrap;
+				overflow:hidden;
+				text-overflow:ellipsis; /*Another style for text-wrap. Print three dots for overflown text. */
+			}
+			.d1:hover, .d2:hover{
+				overflow:visible; /*Overflown text will be visible*/
+			}
+			.d3{
+				width:50px;
+				border:solid 1px black;
+				word-break:break-word; 
+			}
+			.d4{
+				width:50px;
+				border:solid 1px black;
+				word-break: break-all;
+			}
+			.d5{
+				width:30px;
+				border:solid 1px black;
+				word-break: keep-all;
+			}
+			.main{
+				margin-left:100px;
+				margin-top:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="d1"> Hellooo World</div><br>
+			<div class="d2"> Hellooo World</div><br>
+			<div class="d3"> Hellooo World! how are you</div><br>
+			<div class="d4"> Hellooo World ! howw are you </div><br>
+			<div class="d5"> Hellooo World ! how are you</div>
+		</div>
+	</body>
+</html>

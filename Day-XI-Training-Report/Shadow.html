@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Shadow</title>
+		<style>
+			.t1{
+				text-shadow: 2px 2px blue;   /*gives text a shadow. first dimmensions are for left-right and second for top-bottom. Shadow in direction in right-bottom */
+			}
+			.t2{
+				text-shadow: 2px 2px 4px blue; /*3rd dimmensions is for glow of text. Shadow is in direction right-bottom*/
+			}
+			.t3{
+				text-shadow: -4px -4px 4px blue, 10px 10px 3px red;  /*Multiple shadows. First shadow is in direction left-top due to negative signs of dimmensions. Second shadow is in diretion right-bottom*/
+			}
+			.b1{
+				width:100px;
+				height:100px;
+				background-color:red;
+				box-shadow: 4px 4px blue; /*Provides shadow to complete division. shadow is in dorection right-bottom*/
+			}
+			.b2{
+				width:200px;
+				height:200px;
+				background-color:red;
+				box-shadow:6px 6px  10px blue;
+			}
+			.b3{
+				width:200px;
+				height:200px;
+				background-color:rgba(100,150,160,1);
+				box-shadow: -6px -6px 3px blue, 6px 6px 4px red;  /*Multiple box shadows*/
+			}
+			.main{
+				margin-left:100px;
+				margin-top:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class='main'>
+			<h2 class="t1"> Text shadow </h2>
+			<h2 class="t2"> Text shadow with glow </h2>
+			<h2 class="t3"> Text multiple shadow </h2>
+			<h2 class="b1"> Box Shadow 1</h2>
+			<h2 class="b2"> Box Shadow 2</h2>
+			<h2 class="b3"> Box Shadow 3</h2>
+		</div>
+	</body>
+</html>

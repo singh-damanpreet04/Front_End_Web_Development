@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Gradient</title>
+		<style>
+			.f1{
+				background-color: rgba(120,100, 200, 1) /*rgba is color scheme stands for red blue green and a controls opacity of Color*/
+			}
+			.f2{
+				background: linear-gradient(blue, yellow)  /*linear-gradient will give background-color to division in horizontal direction in form such that blue is at top and yellow will below then blue*/
+			}
+			.f3{
+				background: linear-gradient(to top, blue ,yellow) /*to top set position of colors from top to bottom starting from last color i.e last Color will at top of the Gradient*/
+			}
+			.f4{
+				background:linear-gradient(to bottom, blue,yellow) /*opposite of to top*/
+			}
+			.f5{
+				background:linear-gradient(to left, blue, yellow)  /*Last color will at left and first at right*/
+			}
+			.f6{
+				background:linear-gradient(to right, blue, yellow) /*last color will be at right and first at left i.e from right to left direction starting from right side */
+			}
+			.f7{
+				width:200px;
+				height:100px;
+				border-radius:50%;
+				background: radial-gradient(ellipse,blue,yellow,pink) /*Gradient will be in shape of ellipse irrespective of division of shape. First color will be innermost color*/
+			}
+			.f8{
+				width:200px;
+				height:100px;
+				border-radius:50%;
+				background: radial-gradient(circle, blue, yellow,pink)  /*Gradient will be in shape of circle*/
+			}
+			.f9{
+				background:linear-gradient(blue,pink,red,yellow,cyan)   /*Multiple  colors to gradient*/
+			}
+		</style>
+	</head>
+	<body>
+		<h2 class="f1"> Noraml Color</h2>
+		<h2 class="f2"> Linear Gradient </h2>
+		<h2 class="f3"> Linear Gradient to top </h2>
+		<h2 class="f4"> Linear Gradient to bottom</h2>
+		<h2 class="f5"> Linear Gradient left</h2>
+		<h2 class="f6"> Linear Gradient right</h2>
+		<h2 class="f7"> Radial Gradient ellipse </h2>
+		<h2 class="f8"> Radial Gradient ellipse</h2>
+		<h2 class="f9"> Multiple Linear Gradient</h2>
+	</body>
+</html>
