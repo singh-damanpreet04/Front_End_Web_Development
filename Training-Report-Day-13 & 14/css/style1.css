@@ -1,0 +1,73 @@
+.maincontainer1{
+	width:100%;
+	height:100px;
+	background-color:white;
+	position:relative;
+}
+.innercontainer1{
+	width:1300px;
+	height:100px;
+	margin:auto;
+}
+.body{
+	margin:0;
+}
+.logimage{
+	position:relative;
+	top:5px;
+	left:10px;
+}
+.maincontainer2{
+	width:100%;
+	height:40px;
+	background-color:#1C5978;
+}
+.innerconatiner2{
+	color:white;
+	width:1300px;
+	height:40px;
+	margin:auto;
+}
+.para{
+	float:left;
+	width:400px;
+	height:40px;
+}
+.para h4{
+	margin-top:13px;
+	padding:0;
+	margin-left:25px;
+	font-family:arial;
+}
+.maincontainer3{
+	width:100%;
+	height:630px;
+}
+.innerconatiner3{
+	color:white;
+	width:1300px;
+	height:630px;
+	margin:auto;
+}
+.heading{
+	font-family:arial;
+	color:#1C5978;   
+}
+.logtable{
+	clear:both;
+	margin:auto;
+	position:relative; /* Padding-top also be used*/
+	top:35px;
+}
+
+.logtable input[type="button"]{
+	background-color:#1C5978;
+	color:white;
+	border:solid 2px black;
+}
+.logtable input[type="button"]:hover{
+	background-color:red;
+}
+.image{
+	
+}

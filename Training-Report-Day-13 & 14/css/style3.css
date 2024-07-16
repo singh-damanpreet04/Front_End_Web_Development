@@ -1,0 +1,311 @@
+.maincontainer1{
+	width:100%;
+	height:100px;
+	position:relative;
+	
+}
+.innercontainer1{
+	width:1300px;
+	height:100px;
+	margin:auto;
+}
+.body{
+	margin:0;
+}
+.logimage{
+	position:relative;
+	top:5px;
+	left:10px;
+}
+.maincontainer2{
+	width:100%;
+	height:40px;
+	background-color:#1C5978;
+	position:relative;
+}
+.innerconatiner2{
+	color:white;
+	width:1300px;
+	height:40px;
+	margin:auto;
+}
+.para{
+	float:left;
+	width:400px;
+	height:40px;
+}
+.para h4{
+	margin-top:13px;
+	padding:0;
+	margin-left:25px;
+	font-family:arial;
+}
+.maincontainer3{
+	width:100%;
+	height:860px;
+	position:relative;
+	clear:both;
+}
+.innerconatiner3{
+	color:white;
+	width:1300px;
+	height:630px;
+	margin:auto;
+	position:relative;
+}
+.innercontainer1 input[type="button"]{
+	float:right;
+	color:black;
+	background-color:#E2E2E2;
+	position:relative;
+	right:10px;
+	font-family:arial;
+	font-weight:bold;
+	width:100px;
+	border:solid 1px white;
+}
+.innercontainer1 input[type="button"]:hover{
+	background-color:blue;
+	color:yellow;
+}
+.subin1{
+	width:260px;
+	height:310px;
+	float:left;
+}
+.table1{
+	float:left;
+	margin-left:20px;
+	font-family:arial;
+	font-size:15px;
+	border: solid 1px black;
+	border-collapse:collapse;	
+}
+.table1 td{
+	border: solid 1px black;
+	padding:8px;
+}
+.table1 td ul{
+	list-style:none;
+	position:relative;
+	right:30px;
+	top:6px;
+	font-size:13px;
+	color:grey;
+}
+
+.table1 td p{
+	font-weight:bold;
+	height:40px;
+	color:#1C5978;
+	position:relative;
+	top:27px;
+}
+
+.tdata{
+	font-weight:bold;
+	color:#1C5978;
+}
+.listelm{
+	font-weight:bold;
+}
+.subin2{
+	float:left;
+	width:1040px;
+	height:630px;
+}
+.table2{
+	margin-left:19px;	
+	width:1021px;
+	font-family:arial;
+	border-collapse:collapse;
+}
+.table2 td h3 {
+	position:relative;
+	top:25px;
+	color:#1C5978;
+	font-weight:bold;
+}
+.table3{
+	margin-left:19px;	
+	width:1021px;
+	font-family:arial;
+	border-collapse:collapse;
+	position:relative;
+	border:solid 1px black;
+}
+.table3 td{
+
+}
+.table3add{
+	position:relative;
+	padding:4px;
+	background-color:#EBEBEB;
+	text-indent:3px;
+	font-weight:bold;
+	font-size:15px;
+	border:solid 1px black;
+}
+.table3 table{
+	position:relative;
+	width:1010px;
+	margin-left:4px;
+	border-collapse:collapse;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.table3 table td{
+	padding:2px;
+	text-indent:90px;
+	font-size:14px;
+	border:1px solid black;
+}
+.table3 table td select{
+	width:180px;
+	margin-left:7px;
+	height:23px;
+	border:solid 1px black;
+}
+.name{
+	position:relative;
+	left:40px;
+}
+.name input[type="text"]{
+	position:relative;
+	left:3px;
+}
+.title{
+	position:relative;
+	left:56px;
+}
+.title input[type="text"]{
+	position:relative;
+	left:4px;
+}
+.table3 table td input[type="text"]{
+	height:23px;
+	width:180px;
+	border:solid 1px black;
+	position:relative;
+
+}
+.keyword{
+	position:relative;
+	left:-5px;
+	float:left;
+	top:18px;
+}
+.area{
+	float:left;
+	position:relative;
+	width:177px;
+	padding:2px;
+	left:2px;
+}
+.area textarea{
+	position:relative;
+	left:-90px;
+	border:solid 1px black;
+}
+.description{
+	float:left;	
+	position:relative;
+	text-indent:66px;
+}
+.darea{
+	float:left;
+	position:relative;
+	width:176px;
+	padding:2px;
+	left:8px;
+}
+.darea textarea{
+	position:relative;
+	left:-90px;
+	border:solid 1px black;
+}
+.image{
+	width:815px;
+	position:relative;
+	left:190px;
+}
+.image img{
+	margin-left:-90px;
+	width:815px;
+}
+.content{
+	float:left;
+	position:relative;
+	top:150px;
+	left:40px;
+}
+.carea{
+	float:left;
+	position:relative;
+	left:54.5px;
+	
+}
+.carea textarea{
+	margin-left:-90px;
+	border:solid 2px black;
+}
+.imfile{
+	float:left;
+	text-indent:145px;
+	
+}
+.imfile input[type="text"]{
+	margin-left:5px;
+}
+.imfile input[type="button"]{
+	margin-right:25px;
+}
+.imfile div{
+	float:left;
+}
+.subimfile{
+	float:left;
+	text-indent:0px;
+	color:grey;
+	position:relative;
+	top:4px;
+	font-family:arial;
+	font-size:12px;	
+}
+.dorder{
+	float:left;
+	text-indent:100px;
+	margin-top:10px;
+}
+.oarea{
+	float:left;
+	position:relative;
+	margin-left:-83px;
+}
+.oarea textarea{
+	border:solid 1px black;
+}
+.status{
+	text-indent:145px;
+}
+.lastbutton{
+	width:650px;
+	margin:auto;
+	position:relative;
+	bottom:3px;
+}
+.lastbutton input[type="button"]{
+	background-color:#1C5978;
+	color:white;
+	border:solid 1px black;
+}
+.lastbutton input[type="button"]:hover{
+	background-color:red;
+}
+.maincontainer4{
+	width:100%;
+	height:40px;
+	background-color:#1C5978;
+	position:relative;
+}
+
