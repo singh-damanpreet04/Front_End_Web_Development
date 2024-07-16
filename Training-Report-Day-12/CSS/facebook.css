@@ -1,0 +1,217 @@
+.maincontainer{
+	width:100%;
+	min-height:100px;
+	background-color:#3B5999;
+	color:white;
+	overflow:hidden;
+}
+body{
+	margin:0;
+}
+
+.innercontainer{
+	max-width:1200px;
+	min-height:100px;
+	color:white;
+	margin:auto;
+	font-family:arial;
+}
+.logo{
+	float:left;
+	color:white;
+	font-weight:bold;
+	font-size:50px;
+	margin-top:40px;
+	margin-left:20px;
+	margin-bottom:0;
+}
+.logtable{
+		float:right;
+		color:white;
+		margin-top:20px;
+}
+.button2{
+	background-color: #5A73AA;
+	color: white;
+	font-weight: bold;
+	padding: 5px;
+}
+.button2:hover{
+	background-color: red;
+}
+.subin{
+	float:left;
+	margin-left:50px;
+	margin-top:70px;
+	font-family: arial;
+}
+.forimage{
+	float:left;
+	margin-top:100px;
+}
+.maincontainer2{
+	width: 100%;
+	min-height:40%;
+	background-color: #E1E3EF;
+	overflow: hidden;
+}
+.innercontainer2{
+	max-width:1200px;
+	min-height: 70%;
+	margin:auto;
+	font-family: arial;
+	overflow: hidden;
+}
+.p_image{
+	position: relative;
+	top:60px;
+	left:2%;
+	float:left;
+}
+.subin{
+	margin-top: 2.7%;
+	margin-left: 5%;;
+	float:left;
+	min-height: 300px;
+	max-width: 50%;
+}
+.lst{
+	list-style: square;
+	position: relative;
+	left:-6%;
+}
+.lst li{
+	margin-top: 10px;
+}
+.btn2{
+	position: relative;
+	top:10px;
+	left: 1%;
+	padding: 5px;
+	min-width:55%;
+	font-weight: bold;
+	color: white;
+	background-color: #5A73AA;
+	font-size: 13.5px;
+	border-radius:2px;
+	border:solid 1px black;
+}
+.btn2:hover{
+	background-color: red;
+}
+.subin2{
+	float:right;
+	max-width:100%;
+	min-height: 20%;
+	margin-top: 2.7%;
+	font-family: arial;
+}
+.text1{
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin-bottom: 4%;
+}
+.sign_table{
+	margin-right: 10px;
+}
+.sign_table td{
+	text-align: right;
+}
+.selection1{
+	margin-right: 78px;
+}
+.sign_table input[type='textbox']{
+	width:100%;
+	height:35px;
+}
+.sign_table input[type='email']{
+	width:100%;
+	height:35px;
+}
+.sign_table input[type='password']{
+	width:100%;
+	height: 35px;
+}
+.sign_table td select{
+	height: 30px;
+	width: 100px;
+}
+.selection1{
+	margin-right: 210px;
+}
+.tbltext{
+	float: right;
+	margin-top: 15px;
+	font-size: 12.7px;
+}
+.tblbtn{
+	clear: both;
+	padding: 5px;;
+	margin-left: 120px;
+}
+.tblbtn input[type='button']{
+	margin-top: 15px;
+	width: 36%;
+	height: 4%;
+	font-weight: bold;
+	color: white;
+	background-color: #68AA4E;
+}
+.tblbtn input[type='button']:hover{
+	background-color: blue;
+}
+.tbltext2{
+	margin-top: 20px;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.tbl_sub_text{
+	padding-right: 30px;
+}
+.tbl_sub_text a:hover{
+	color: blue;
+}
+.tbltext2 a:hover{
+	color: red;
+}
+.maincontainer3{
+	clear: both;
+	width:100%;
+	height: 100px;
+}
+.lang{
+	max-width: 1200px;
+	min-height: 100px;
+	margin: auto;
+}
+.lang ul{
+	list-style: none;
+	float: left;
+}
+.lang ul li{
+	float: left;
+	margin-left: 8px;
+	font-size: 14px;
+	color: rgb(76, 76, 216);
+}
+.hline{
+	clear: both;
+	margin-bottom: 0px;
+}
+.flist{
+	position: relative;
+	top:-12px;
+}
+.flist ul li{
+	color:#5A73AA ;
+}
+.flist2{
+	float: right;
+	position: relative;
+	top:-13px
+}
+.flist2 ul li{
+	margin-left: 10px;
+	color: #5A73AA;
+}
