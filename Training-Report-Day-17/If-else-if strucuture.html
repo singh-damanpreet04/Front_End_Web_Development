@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title> IF else if statement </title>
+		<script language="javascript" type="text/javascript">
+			function add()
+			{
+				var a=parseInt(document.getElementById('box1').value);
+				let b=parseInt(document.getElementById('box2').value);
+				let c= a+b;
+				let gift= document.getElementById('prize');
+				if(c==30)
+				{
+					gift.innerText="You won a Smart Phone";
+				}
+				else if(c==40)
+				{
+					gift.innerText="You won an Ipad";
+				}
+				else if(c==50)
+				{
+					gift.innerText="You won Laptop";
+				}
+				else if (c>50 && c<100)
+				{
+					gift.innerText="You won Smart Watch";
+				}
+				else
+				{
+					gift.innerText='Better Luck Next Time';
+				}
+			}
+		</script>
+	</head>
+	<body style="margin:40px">
+		<p style="margin:10px 0px; font-weight:bold; font-size:20px">Try Your Luck and win exciting prizes</p>
+		<input type="textbox" placeholder="Enter Number 1" id="box1"><br><br>
+		<input type="text" placeholder="Enter Number 2" id="box2"><br><br>
+		<input type="button" value="ADD" onclick="add()"/>  <br></br>
+		<div style="float:left;background-color:aqua; color:white; font-size:20px" id="prize"></div>
+	</body>
+</html>
