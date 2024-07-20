@@ -1,0 +1,150 @@
+<html>
+	<head>
+		<title>Lightbox</title>
+		<style>
+			.main img{
+				width:200px;
+				height:200px;
+			}
+			.imagin{
+				width:400px;
+				height:400px;
+				position:absolute;
+				top:10%;
+				left:25%;
+				display:none;
+			}
+			.fade{
+				width:100%;
+				height:100%;
+				position:fixed;
+				background-color:black;
+				top:0;
+				left:0;
+				opacity:0.9;
+				display:none;
+			}
+			.cls{
+				width:100px;
+				position:absolute;
+				top:10px;
+				right:20px;
+				font-size:15px;
+				padding:3px;
+				font-weight:bold;
+				display:none;
+			}
+			.prev{
+				display:none;
+				position:absolute;
+				top:100px;
+				left:290px;
+				font-size:15px;
+				padding-left:10px;
+				padding-right:10px;
+			}
+			.next{
+				position:absolute;
+				top:100px;
+				left:800px;
+				display:none;
+				padding-left:10px;
+				padding-right:10px;
+				font-size:15px;
+			}
+		</style>
+		<script src="jquery.js"></script>
+		<script>
+			let src;
+			$
+			(
+				function()
+				{
+						$('img').click(function(){
+						 src= $(this).attr('src')
+							$('.imagin').attr('src',src)
+							$('.fade').fadeIn();
+							$('.imagin').fadeIn();
+							$('.prev').fadeIn();
+							$('.next').fadeIn();
+							$('.cls').fadeIn();						
+						})
+						
+						$('.cls').click(function(){
+							$('.imagin').fadeOut();
+							$('.fade').fadeOut();
+							$('.prev').fadeOut();
+							$('.next').fadeOut();
+							$('.cls').fadeOut();
+						})
+						$('.prev').click(function(){
+							if(src=='1.jpeg')
+							{
+								$('.imagin').attr('src','4.jpg')
+								$('.imagin').fadeIn();
+								src=$('.imagin').attr('src')
+							}
+							else if(src=='2.jpg')
+							{
+								$('.imagin').attr('src','1.jpeg')
+								$('.imagin').fadeIn(2000);
+								src=$('.imagin').attr('src')
+							}
+							else if(src=='3.jpg')
+							{
+								$('.imagin').attr('src','2.jpg')
+								$('.imagin').fadeIn()
+								src=$('.imagin').attr('src')
+							}
+							else
+							{
+								$('.imagin').attr('src','3.jpg')
+								$('.imagin').fadeIn()
+								src=$('.imagin').attr('src');
+							}	
+						})
+						$('.next').click(function(){
+							if(src=="1.jpeg")
+							{
+								$('.imagin').attr('src','2.jpg')
+								$('.imagin').fadeIn();
+								src=$('.imagin').attr('src');
+							}
+							else if(src=="2.jpg")
+							{
+								$('.imagin').attr('src','3.jpg')
+								$('.imagin').fadeIn();
+								src=$('.imagin').attr('src')
+							}
+							else if(src=="3.jpg")
+							{
+								$('.imagin').attr('src','4.jpg')
+								$('.imagin').fadeIn();
+								src=$('.imagin').attr('src')
+							}
+							else
+							{
+								$('.imagin').attr('src','1.jpeg')
+								$('.imagin').fadeIn();
+								src=$('.imagin').attr('src');
+							}
+						})
+						
+				}
+			)
+		</script>
+	</head>
+	<body>
+		<div class="main">
+			<img value="1" class="img1"src="1.jpeg">
+			<img value="2" class="img2" src="2.jpg">
+			<img value="3" class="img3"src="3.jpg">
+			<img value="4" class="img4" src="4.jpg">
+		</div>
+		<div class="fade"></div>
+		<img class="imagin">
+		<input type="button" value="Close" class="cls">
+		<input type="button" value="Previous" class="prev">
+		<input type="button" value="Next" class="next">
+	</body>
+</html>
