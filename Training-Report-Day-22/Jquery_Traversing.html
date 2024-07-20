@@ -1,0 +1,110 @@
+<html>
+	<head>
+		<title> Jquery_Traversing </title>
+		<style>
+			.menu li{
+				font-family:arial; font-size:15px; background-color:Red; color:white; padding:20px;
+				border: solid 1px #FFF;
+			}
+		</style>
+		<script src="jquery.js"></script>
+		<script> 
+			$
+			(
+				function()
+				{
+					$('.first').click(function(){
+						alert($('.menu li').first().text())
+					})
+					$('.last').click(function(){
+						alert($('.menu li').last().text())
+					})
+					$('.eq').click(function(){
+						alert($('.menu li').eq(0).text())
+					})
+					$('.filter').click(function(){
+						alert($('.menu li').filter('.t').text())
+					})
+					$('.not').click(function(){
+						alert($('.menu li').not('.t').text())
+					})
+					$('.child').click(function(){
+						alert($('.menu').children().text())
+					})
+					$('.find').click(function(){
+						alert($('.menu').find('.t').text())
+					})
+					$('.parent').click(function(){
+						$('.innerspan').parent().css('color','red')
+					})
+					$('.parents').click(function(){
+						$('.innerspan').parents().css('color','red')
+					})
+					$('.parentu').click(function(){
+						$('.innerspan').parentsUntil('.maindiv').css('color','blue')   //doubt
+					})
+					$('.sibling').click(function(){
+						alert($('.t').siblings().text())
+					})
+					$('.next').click(function(){
+						alert($('.t').next().text())
+					})
+					$('.nextall').click(function(){
+						alert($('.t').nextAll().text())
+					})
+					
+					$('.nextuntil').click(function(){
+						alert($('.t').nextUntil("li:eq(4)").text())
+					})
+					
+					$('.prev').click(function(){
+						alert($('.t').prev().text())
+					})
+					
+					$('.prevall').click(function(){
+						alert($('.t').prevAll().text())
+					})
+					
+					$('.prevuntil').click(function(){
+						alert($('.t').prevUntil("li:eq(0)").text())
+					})
+				}
+			)
+		</script>
+	</head>
+	<body>
+		<input type="button" value="First" class="first"/>
+		<input type="button" value="Last" class="last"/>
+		<input type="button" value="EQ" class="eq"/>
+		<input type="button" value="Filter" class="filter"/>
+		<input type="button" value="Not" class="not"/>
+		<input type="button" value="Children" class="child"/>
+		<input type="button" value="Find" class="find"/>
+		<input type="button" value="Parent" class="parent"/>
+		<input type="button" value="Parents" class="parents"/>
+		<input type="button" value="Parents Until" class="parentu"/>
+		<input type="button" value="Siblings" class="sibling"/>
+		<input type="button" value="Next" class="next"/>
+		<input type="button" value="Next All" class="nextall"/>
+		<input type="button" value="Next Until" class="nextuntil"/>
+		<input type="button" value="Previous" class="prev"/>
+		<input type="button" value="Previous All" class="prevall"/>
+		<input type="button" value="Previous Until" class="prevuntil"/>
+		<ul class="menu">
+			<li> List -1</li>
+			<li> List -2</li>
+			<li class="t"> List -3</li>
+			<li> List -4</li>
+			<li> List -5</li>
+		</ul>
+		<br>
+		<div class="maindiv">
+			main parent text
+			<div class="innerdiv">
+			Inner parent text
+			<br>
+			<span class="innerspan"> Span Text </span>
+			</div>
+		</div>
+	</body>
+</html>

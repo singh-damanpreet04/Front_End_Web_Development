@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<title> Set/Append/Add-remove </title>
+		<style>
+			.m1{
+				width:200px;height:200px;background-color:red;color:white;
+			}
+			.aclass{
+				background-color:pink;margin-left:100px;
+			}
+		</style>
+		<script src="jquery.js"></script>
+		<script>
+			$
+			(
+				function()
+				{
+					$('.text').click(function(){
+						$('.m1').text("hello to jquery test function")
+					})
+					$('.html').click(function(){
+						$('.m1').html("<b><u>testing html function</ux></b>")
+					})
+					$('.val').click(function(){
+						$('.m2').val("text box value")
+					})
+					$('.append').click(function(){
+						$('.m1').append(" appended text")
+					})
+					$('.prepend').click(function(){
+						$('.m1').prepend(" Prepended text - ")
+					})
+					$('.after').click(function(){
+						$('.m1').after("After division the text appears")
+					})
+					$('.before').click(function(){
+						$('.m1').before("Before division the text appears")
+					})
+					$('.remove').click(function(){
+						$('.m1').remove()
+					})
+					$('.empty').click(function(){
+						$('.m1').empty()
+					})
+					$('.addclass').click(function(){
+						$('.m3').addClass("aclass")
+					})
+					$('.removeclass').click(function(){
+						$('.m3').removeClass('aclass')
+					})
+					$('.toggleclass').click(function(){
+						$('.m3').toggleClass('aclass')
+					})
+				}
+			)
+		</script>
+	</head>
+	<body>
+		<input type="button" value="Text" class="text"/>
+		<input type="button" value="HTML" class="html"/>
+		<input type="button" value="Val" class="val"/>
+		<input type="button" value="Append" class="append"/>
+		<input type="button" value="Prepend" class="prepend"/>
+		<input type="button" value="After" class="after"/>
+		<input type="button" value="Before" class="before"/>
+		<input type="button" value="Remove" class="remove"/>
+		<input type="button" value="Empty" class="empty"/>
+		<input type="button" value="Add Class" class="addclass"/>
+		<input type="button" value="Remove Class" class="removeclass"/>
+		<input type="button" value="Toggle Class" class="toggleclass"/> <br><br><br><br>
+		<div class="m1"> </div>
+		<br><br>
+		<input type="text" class="m2"/>
+		<div class="m3">
+			<p> Para - 1</p>
+			<p> Para - 2</p>
+			<p> Para - 3</p>
+		</div>
+	</body>
+</html>
