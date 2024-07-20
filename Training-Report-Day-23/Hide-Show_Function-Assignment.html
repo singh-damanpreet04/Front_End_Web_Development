@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title> Jquery_assignment-2</title>
+		<style>
+			.m1{
+				background-color:red; width:200px;height:200px;float:left;
+			}
+			.m2{
+				background-color:blue; width:200px;height:200px;float:left;
+			}
+			.m3{
+				background-color:yellow; width:200px;height:200px;float:left;
+			}
+			.m4{
+				background-color:pink; width:200px;height:200px;float:left;
+			}
+		</style>
+		<script src="jquery.js"></script>
+		<script>
+			$
+			(
+				function()
+				{
+					$('.hide').click(function(){
+						$('.m1').hide(function(){
+							$('.hide').click(function(){
+								$('.m2').hide(function(){
+									$('.hide').click(function(){
+											$('.m3').hide(function(){
+											$('.hide').click(function(){
+												$('.m4').hide()
+											})
+											})
+										})
+									})
+								})
+							})
+						})
+						$('.show').click(function(){
+						$('.m4').show(function(){
+							$('.show').click(function(){
+								$('.m3').show(function(){
+									$('.show').click(function(){
+											$('.m2').show(function(){
+											$('.show').click(function(){
+												$('.m1').show()
+											})
+											})
+										})
+									})
+								})
+							})
+						})
+				}
+			)
+		</script>
+	</head>
+	<body>
+		<input type="button" value="Hide" class="hide">
+		<input type="button" value="Show" class="show">
+		<br><br>
+		<div class="m1"></div>
+		<div class="m2"></div>
+		<div class="m3"></div>
+		<div class="m4"></div>
+	</body>
+</html>

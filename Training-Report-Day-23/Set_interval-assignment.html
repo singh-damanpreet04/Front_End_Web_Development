@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title> Jquery_setInterval-assignment </title>
+		<style>	
+			.progressbar{
+				width:1000px;
+				height:40px;
+				border:solid 4px black;
+				box-shadow: 0 0 4px blue;
+				margin:200px;
+			}
+			.pinner{
+				width:20px;
+				height:40px	;
+				background-color:red;
+			}
+		</style>
+		<script src="jquery.js"></script>
+		<script>	
+			var i=20;
+			var s;
+			$
+			(
+				function()
+				{
+					s = setInterval('look()',1);
+				}
+				
+			)
+				function look()
+				{
+					i=i+10;
+					if(i==1010)
+					{
+						clearInterval(s);
+						s=setInterval('set_back()',1)
+					}
+					else
+					{
+					$('.pinner').css('width',i);
+					}
+				}
+				function set_back()
+				{
+					i=i-10;
+					if(i==10)
+					{
+						clearInterval(s);
+						s=setInterval('look()',1)
+					}
+					else
+					{
+						$('.pinner').css('width',i)
+					}
+					
+				}
+		</script>
+	</head>
+	<body>
+		<div class="progressbar">
+			<div class="pinner"></div>
+		</div>
+	</body>
+</html>
+
+	
