@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title> Jquery2 </title>
+		<script src="jquery.js"></script>
+		<script>
+			$
+			(
+				function()
+				{
+					$('.ad').click(function(){
+					var a=parseInt($('.n1').val());
+					var b= parseInt($('.n2').val());
+					var c= a+b;
+					alert("This sum is = " + c);
+				})
+				}
+			)
+		</script>
+	</head>
+	<body>
+		Enter Number 1 <input type="text" class="n1"/><br/>
+		Enter Number 2 <input type="text" class="n2"/><br/>
+		<input type="button" value="Add" class="ad"/>
+	</body>
+</html>

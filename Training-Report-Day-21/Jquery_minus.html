@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title> Jquery_minus</title>
+		<script src="jquery.js"></script>
+		<script>
+			$
+			(
+				function()
+				{
+					$('.min').click(function(){
+					let a= parseInt($('.text1').val());
+					let b= parseInt($('.text2').val());
+					let c = a-b;
+					alert("The difference is = " +c);
+				})
+				}
+			)
+		</script>
+	</head>
+	<body>
+		Enter Number <input type="text" class="text1"><br>
+		Enter Number <input type="text" class="text2"><br>
+		<input type="button" value="Subtract" class="min">
+	</body>
+</html>
