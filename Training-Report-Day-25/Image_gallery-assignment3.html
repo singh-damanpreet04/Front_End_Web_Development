@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title> </title>
+		<script src="jquery.js"></script>
+		<style>
+			.main1 img{
+				width:300px;
+				height:350px;
+				position:absolute;
+				display:none;
+			}
+			.titl{
+				width:300px;
+				height:50px;
+				background-color:black;
+				color:white;
+				position:relative;
+				top:350px;
+				text-indent:80px;
+				font-size:30px;
+				font-family:arial;
+			}
+		</style>
+		<script>
+		var i=1;
+		var txt="";
+			$
+			(
+				function()
+				{
+					$('.img1').css('display','block')
+					$('.img'+i).fadeIn(function()
+				{
+					txt = $(this).attr('title')
+					$('div:eq(1)').text(txt);
+				})
+					setInterval('show()',2000)
+				}
+			)
+			function show()
+			{	
+				$('.img'+i).fadeOut(1000);
+				i=i+1;
+				if(i==5)
+				{
+					i=1;
+				}
+				$('.img'+i).fadeIn(1000);
+				$('.img'+i).fadeIn(function()
+				{
+					txt = $(this).attr('title')
+					$('div:eq(1)').text(txt);
+				})				
+			}
+		</script>
+	</head>
+	<body>
+		<div class="main1">
+			<img title="Facebook" class="img1" src="Images/1.jpeg">
+			<img title="SmartPhone" class="img2" src="Images/2.jpg">
+			<img title="Nature" class="img3" src="Images/3.jpg">
+			<img title="Cheetah" class="img4" src="Images/4.jpg">
+		</div>
+		<div class="titl"></div>
+	</body>
+</html>
