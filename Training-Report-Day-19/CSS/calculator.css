@@ -1,0 +1,56 @@
+.body{
+	margin:0;
+}	
+.mainconatiner{
+	position:relative;
+	top:250px;
+	margin:auto;
+	width:500;
+	height:350px;
+}
+.text-box input{
+	width:240px;
+	height:33px;
+	position:relative;
+	left:105px;
+	text-indent:5px;
+	font-size:23px;
+	
+}
+
+.button1{
+	position:relative;
+	left:100px;
+	clear:both;
+}
+.button1 input{
+	padding-left:17px;
+	padding-right:17px;
+	padding-top:12px;
+	padding-bottom:12px;
+	font-size:18px;
+	margin-top:20px;
+	margin-left:10px;
+}
+.button{
+	position:relative;
+	left:100px;
+}
+.button input{
+	padding-left:17px;
+	padding-right:17px;
+	padding-top:12px;
+	padding-bottom:12px;
+	font-size:18px;
+	margin-top:5px;
+	margin-left:10px;
+}
+.button input[value="00"]{
+	padding-left:12px;
+	padding-right:12px;
+}
+
+.button input[value="="]{
+	padding-left:15px;
+	padding-right:15px;
+}

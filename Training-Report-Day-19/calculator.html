@@ -1,0 +1,37 @@
+	<html>
+	<head>
+		<title> Calculator_using_javascript </title>
+		<link rel="stylesheet" href="CSS/calculator.css">
+		<script src="jsfile/calc_logic.js">
+		</script>
+	</head>
+	<body class="body">
+		<div class="mainconatiner">
+			<div class="text-box">
+				<input type="text" id="text" readonly>
+			</div>
+			<div class="button1">
+				<input type="button" value="7" onclick="printf(7)">
+				<input type="button" value="8" onclick="printf(8)">
+				<input type="button" value="9" onclick="printf(9)">
+				<input type="button" value="/" onclick="printf('/')">
+			</div>
+			<div class="button">
+				<input type="button" value="4" onclick="printf(4)">
+				<input type="button" value="5" onclick="printf(5)">
+				<input type="button" value="6" onclick="printf(6)">
+				<input type="button" value="*" onclick="printf('*')">
+				<br>
+				<input type="button" value="1" onclick="printf(1)">
+				<input type="button" value="2" onclick="printf(2)">
+				<input type="button" value="3" onclick="printf(3)">
+				<input type="button" value="-" onclick="printf('-')">
+				<br>
+				<input type="button" value="0" onclick="printf(0)">
+				<input type="button" value="00" onclick="printf(0o0)">
+				<input type="button" value="+" onclick="printf('+')">
+				<input type="button" value="=" onclick="result()">
+			</div>
+		</div>
+	</body>
+</html>

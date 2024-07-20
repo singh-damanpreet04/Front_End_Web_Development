@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title> Digital clock using Set Interval function </title>
+		<script language="Javascript" type="text/javascript">
+			function displayclock()
+			{
+				setInterval('tim()',1000)
+			}
+			function tim()
+			{
+				var d=new Date(); // Creates date object and assign them to variable d.
+				var t=d.toLocaleTimeString();//Date object are static by default. toLocaleTimeString returns only time poriton of date object as a string.
+				document.getElementById('displaytime').innerHTML=t;
+			}
+		</script>
+	</head>
+	<body>
+		<p id="displaytime"></p>
+		<input type="button" value="Display Time" onclick="displayclock()"/>
+	</body>
+</html>
