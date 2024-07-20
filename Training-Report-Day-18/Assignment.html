@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title> Assignments </title>
+		<script language="javascript" type="text/javascript">
+			function add()
+			{
+				var a=parseInt(document.getElementById("n1").value);
+				var b=parseInt(document.getElementById("n2").value);
+				var c=a+b;
+				<!-- alert("The sum is "+ c)-->
+				document.getElementById('n3').value=c
+			}
+		</script>
+	</head>
+	<body>
+		Enter number 1 <input type="text" id="n1"/><br/>
+		Enter number 2 <input type="text" id="n2"/><br/>
+		<input type="button" value="Add" onclick="add()"> <br><br>
+		<input type="text" id="n3"/ placeholder="Sum is" readonly > <!--due to readonly property of textbox it's value can't be changed by user -->
+	</body>
+</html>

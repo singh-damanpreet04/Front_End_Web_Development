@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title> Form Validation </title>
+		<script language="javascript" type="text/javascript">
+			function validate()
+			{
+				if(document.myform.name.value=="")
+				{
+					alert("Please Enter Name")
+					document.myform.name.focus();
+					return(false);
+				}
+				if(document.myform.email.value=="")
+				{
+					alert("Please Enter Email")
+					document.myform.email.focus();
+					return(false);
+				}
+				if(document.myform.zipcode.value=="" || isNaN(document.myform.zipcode.value)|| document.myform.zipcode.value.
+				length!=5)
+				{
+					alert("Please Enter Proper Format of Zip Code")
+					document.myform.zipcode.focus();
+					return(false);
+				}
+				if(document.myform.country.value=="-1")
+				{
+					alert("Please Select country")
+					return(false);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form name="myform" onsubmit="return validate()">
+			Enter Name <input type="text" name="name"/><br/>
+			Enter Email <input type="email" name="email"/><br/>
+			Enter Zip Code <input type="text" name="zipcode"/><br/>
+			Country 
+			<select name="country">
+				<option value="-1" selected> Select country </option>
+				<option value="1"> India </option>
+				<option value="2"> China </option>
+				<option value="3"> Nepal </option>
+			</select><br/>
+			<input type="submit" value="save"/>
+		</form>
+	</body>
+</html>

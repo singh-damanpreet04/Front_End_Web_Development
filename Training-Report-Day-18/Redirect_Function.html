@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title> Redirect function </title>
+		<script language="javascript" type="text/javascript">
+			let num= 9;
+			function send()
+			{
+				window.location="https://www.google.com"
+			}
+			function timer()
+			{
+				let show= document.getElementById('body');
+				show.innerHTML= `<p>Redirecting to other page within ${num} seconds</p>`
+				num = num-1; //upadte value of num
+				if(num==-1)
+				{
+					clearInterval(s);  //stop the calling of timer function if value of num =0
+				}
+			}
+			let s=setInterval('timer()',1000)   //call timer function after every second
+			setTimeout('send()',9000) //1000 = 1s Call send function after 9 second once 
+		</script>
+	</head>
+	<body id="body">
+		<!-- <input type="button" value="Redirect" onclick="send()"/> -->
+	</body>
+</html>

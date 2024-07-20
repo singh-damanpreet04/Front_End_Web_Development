@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title> Alert confirm and prompt box </title>
+		<script language="javascript" type="text/javascript">
+			function alert1()
+			{
+				alert("Hello this is the alert box")
+			}
+			function confirm1()
+			{
+				var ab=confirm("Do you want to continue")
+				if(ab==true)
+				{
+					document.getElementById('asd').innerHTML="It's yes from the user"
+				}
+				else
+				{
+					document.getElementById('asd').innerHTML="It's no from the user"
+				}
+			}
+			function prompt1()
+			{
+				var age= prompt('Enter Your age')
+				if(age<18)
+				{
+					document.getElementById('asd').innerHTML= "You are not eligible to vote as entered age is " + '<b>'+age +'</b>' + ' which is less then <b>18</b>'
+				}
+				else{
+					document.getElementById('asd').innerHTML="You are eligible to vote"
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="Alert" onclick="alert1()">
+		<input type="button" value="Confirm" onclick="confirm1()">
+		<input type="button" value="Prompt" onclick="prompt1()">
+		<p id="asd"></p>
+	</body>
+</html>
