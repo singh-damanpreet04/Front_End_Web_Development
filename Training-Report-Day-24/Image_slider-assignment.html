@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>Jquery_Slide</title>
+		<style>
+			.main{
+				width:693px;
+				height:300px;
+				overflow:hidden;
+				margin:100px;
+				background-color:#CCC;
+				border:solid 1px #000;
+				padding:10px;
+			}
+			.inner{
+				width:10000px;
+			}
+			.main img{
+				width:700px;
+				height:300px;
+			}
+		</style>
+		<script src="jquery.js"></script>
+		<script>
+			var i=5;
+			$
+			(
+				function()
+				{
+					setInterval('show()',3000)
+				}
+			)
+			function show()
+			{
+				if(i==710)
+				{
+					i=-2110;
+					$('.inner').animate({'margin-left':i},2000);
+				}
+				else
+				{
+				$('.inner').animate({'margin-left':i},2000);
+				}
+				i=i+705;
+			}
+		</script>
+	</head>
+	<body>
+		<div class="main">
+			<div class="inner">
+				<img src="Images/1.jpeg">
+				<img src="Images/2.jpg">
+				<img src="Images/3.jpg">
+				<img src="Images/4.jpg">
+			</div>
+		</div>
+	</body>
+</html>
